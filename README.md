@@ -70,7 +70,7 @@ $ yarn add yeoman-generator
 
 在目录下创建以下文件。
 
-![1](./dist/1.png)
+![1](./assets/1.png)
 
 此文件作为 Generator 的核心入口，需要导出一个继承自 Yeoman Generator 的类型。Yeoman Generator 在工作时，会自动调用我们在此类型中定义的一些生命周期方法，我们在这些方法中可以通过调用父类提供的一些工具方法实现一些功能，例如文件写入。
 
@@ -102,7 +102,7 @@ $ yo yeoman_sample // 项目名 generator-<name> 中的name
 
 可在目录下查看到新建的文件。
 
-![2](./dist/2.png)
+![2](./assets/2.png)
 
 ### 根据模版创建文件
 
@@ -112,7 +112,7 @@ $ yo yeoman_sample // 项目名 generator-<name> 中的name
 
 在`templates`目录下，新建 test.txt 文件用于测试。
 
-![3](./dist/3.png)
+![3](./assets/3.png)
 
 文件内容如下：
 
@@ -204,7 +204,7 @@ module.exports = class extends Generator {
 
 首先将，项目文件复制到 `templates` 下。
 
-![3](./dist/4.png)
+![4](./assets/4.png)
 
 在相应动态生成的地方，按照 EJS 模板的方式更改就可以。
 
